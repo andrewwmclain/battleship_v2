@@ -8,33 +8,33 @@ In this lab we will continue to test game component functionality using a comman
 
 In the runs that we display below, we  use a file that contains only two ships:
 
-![twoShips.txt](/images/image1.png)
+![twoShips.txt](/image1.png)
 
 Here’s the start of one run where we chose to fire manually.  On our first shot, we hit a part of the ship “Beta” – note the “Outcome” that is printed.
 
-![SHIP_HIT](/images/image2.png)
+![SHIP_HIT](/image2.png)
 
 If we were so silly as to fire on this square or any other square we’ve fired at before, this is the “Outcome” you get:
 
-![SHOT_HERE_BEFORE](/images/image3.png)
+![SHOT_HERE_BEFORE](/image3.png)
 
 When we hit the last square of a ship, the “Outcome” is “SHIP_SUNK”
 
-![SHIP_SUNK](/images/image4.png)
+![SHIP_SUNK](/image4.png)
 
 On the other hand, if we whiff a shot and don’t hit anything, we get the “Outcome” “SHOT_MISSED”:
 
-![SHOT_MISSED](/images/image5.png)
+![SHOT_MISSED](/image5.png)
 
 There is one other possible “Outcome”, that’s when we sink the last ship!
 
-![CAME_WON](/images/image6.png)
+![CAME_WON](/image6.png)
 
 These five different “Outcomes” correspond to enum values defined in **grid.h**.
 
 What about algorithmic firing?  Here’s start of a run where algorithmic firing was chosen:
 
-![ALGORITHMIC FIRING](/images/image7.png)
+![ALGORITHMIC FIRING](/image7.png)
 
 There’s not much new to see here.  The more interesting story is what is happening in the code.  At the start of the main program, an instance for the _CpuLogic_ class is created to serve as an oracle to tell it which square to fire on.  This _CpuLogic_ object purposely doesn’t have any knowledge of the grid ship configuration so it can’t “cheat.”
 
