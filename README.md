@@ -1,3 +1,5 @@
+(update)
+
 # LAB 5 - Battleship Game, Part 2 - Firing Shots
 ## Goal
 Continue developing the code infrastructure needed for the Battleship game.  You will convert your _Grid_ ADT to a C++ class, and then extend its functionally by adding a method to fire a shot.  You will also implement a class called _CpuLogic_ that determines where your CPU game opponent should fire its next shot.  This lab will allow you to practice implementing C++ classes.
